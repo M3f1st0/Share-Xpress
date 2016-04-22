@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:id="@android:id/list"
+        android:contextClickable="true"
+        android:clickable="true"></ListView>
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom">
+
+        <TableRow
+            android:gravity="center|bottom"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:baselineAligned="false"
+            android:divider="#1b58f4"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volume:"
+                android:id="@+id/textView2" />
+
+            <SeekBar
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:indeterminate="false"
+                android:max="100"
+                android:longClickable="false"
+                android:progress="50"
+                android:textAlignment="textStart"
+                android:text="Volume:"
+                android:layout_span="2" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:gravity="center|bottom"
+            android:layout_weight="0">
+
+            <ImageButton
+                android:id="@+id/streamer_pause"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                android:background="@drawable/pause_icon"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp" />
+
+            <ImageButton
+                android:id="@+id/streamer_play"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/play_icon"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp" />
+
+            <ImageButton
+                android:id="@+id/streamer_stop"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/stop_icon"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp" />/>
+
+        </TableRow>
+    </TableLayout>
+
+
+</FrameLayout>

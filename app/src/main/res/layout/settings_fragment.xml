@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Settings"
+        android:id="@+id/settingsTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Backup when:"
+        android:id="@+id/textView"
+        android:layout_below="@+id/settingsTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/backupLimiterSeekBar"
+        android:text="free space less then (MB):"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/settingsTextView"
+        android:layout_alignEnd="@+id/settingsTextView"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/backupLimit"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/backupLimiterSeekBar"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/backupLimiterSeekBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Current free space (MB):"
+        android:id="@+id/freeSpace"
+        android:layout_below="@+id/backupLimiterSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/freeSpaceTextView"
+        android:layout_below="@+id/backupLimiterSeekBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/backupLimiterSeekBar"
+        android:layout_toEndOf="@+id/backupLimiterSeekBar"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Delete files after backup:"
+        android:id="@+id/deleteAfterBackupTextView"
+        android:layout_below="@+id/freeSpaceTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:textSize="18dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/deleteCheckBox"
+        android:checked="false"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Interval for backup check (sec):"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/deleteAfterBackupTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/intervalEditText"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignRight="@+id/deleteCheckBox"
+        android:layout_alignEnd="@+id/deleteCheckBox"
+        android:layout_toEndOf="@+id/settingsTextView"
+        android:layout_toRightOf="@+id/settingsTextView"
+        android:textSize="18dp" />
+
+</RelativeLayout>

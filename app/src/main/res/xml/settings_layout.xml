@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/backup_settings"
+        android:key="pref_key_backup_settings">
+
+        <EditTextPreference
+            android:title="@string/start_backup_if_free_space"
+            android:key="start_backup_if_free_space"
+            android:defaultValue="500">
+
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:title="@string/current_free_space"
+            android:editable="false"></EditTextPreference>
+
+        <CheckBoxPreference
+            android:key="delete_files_after_backup"
+            android:title="@string/delete_files_after_backup"
+            android:defaultValue="false">
+
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:title="@string/interval_check"
+            android:key="interval_check"
+            android:defaultValue="86400">
+
+        </EditTextPreference>
+
+        <SwitchPreference
+            android:key="backup_enabled"
+            android:title="@string/backup_enabled"
+            android:defaultValue="false">
+
+        </SwitchPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+
+        android:title="@string/connection_settings"
+        android:key="connection_settings">
+
+        <EditTextPreference
+            android:title="@string/file_server"
+            android:key="file_server"
+            android:defaultValue="192.168.1.7">
+
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:title="@string/stream_server"
+            android:key="stream_server"
+            android:defaultValue="http://192.168.1.7">
+
+        </EditTextPreference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

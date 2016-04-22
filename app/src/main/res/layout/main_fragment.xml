@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="Upload"
+            android:id="@+id/uploadButton"
+            android:layout_above="@+id/downloadButton"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/up_icon"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="Download"
+            android:id="@+id/downloadButton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/down_icon"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="Player"
+            android:id="@+id/playerButton"
+            android:background="@drawable/music_icon"
+            android:layout_below="@+id/downloadButton"
+            android:layout_alignLeft="@+id/downloadButton"
+            android:layout_alignStart="@+id/downloadButton"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@drawable/logo" />
+
+    </FrameLayout>
+</LinearLayout>
